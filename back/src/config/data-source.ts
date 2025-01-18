@@ -15,6 +15,6 @@ export const AppDataSource = new DataSource({
     entities: [User, Credential, Appoinment], // Entidades mapeadas a tablas de la base de datos
     logging: false, // Desactiva el registro de consultas SQL
     synchronize: true, // Sincroniza automáticamente la estructura de la base de datos 
-    dropSchema: true, // Evita que se eliminen los esquemas existentes en la base de datos
+    dropSchema: false, // Evita que se eliminen los esquemas existentes en la base de datos
 
 });
