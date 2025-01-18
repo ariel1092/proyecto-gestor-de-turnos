@@ -11,7 +11,9 @@ import { ErrorResponse, PostgresError } from "./interfaces/ErrorInterface"
 //Middlewares
 server.use(express.json())
 server.use(morgan("dev"))
-server.use(cors())
+server.use(cors({
+    origin:'https://proyecto-gestor-de-turnos-xokk1ufn5-ariel1092s-projects.vercel.app'
+}))
 
 //Rutas
 server.use(router)
