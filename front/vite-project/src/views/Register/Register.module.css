@@ -1,0 +1,111 @@
+/* App.module.css */
+
+.container {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+h2 {
+    font-size: 22px;
+    color: #c5a880;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #b5b5b5;
+    margin-bottom: 4px;
+}
+
+.input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #555555;
+    background-color: transparent;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom-color: #c5a880;
+}
+
+input::placeholder {
+    color: #777777;
+}
+
+button {
+    background-color: #c5a880;
+    color: #2a2a2a;
+    padding: 0.7rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.span{
+    color: #d8b88f;
+}
+
+button:hover {
+    background-color: #d8b88f;
+}
+
+.error {
+    color: #e57373;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+.errorLabel {
+    color: #e57373; /* Rojo más suave */
+    font-size: 0.60rem; /* Tamaño más pequeño para mayor sutileza */
+    font-weight: 400; /* Peso más ligero para suavizar */
+    margin-top: 0.1rem; /* Espaciado mínimo con el input */
+    /* Fondo extremadamente sutil */
+    padding: 4px 8px; /* Espaciado interno más compacto */
+    border: 1px solid rgba(229, 115, 115, 0.3); /* Borde sutil y semi-transparente */
+    border-radius: 3px; /* Bordes más suaves */
+    display: inline-block; /* Ajuste al contenido */
+    max-width: 80%; /* Evita que se extienda demasiado */
+    word-wrap: break-word; /* Evita desbordes */
+    text-align: left; /* Alineación coherente */
+    margin-bottom: 0.1rem; /* Espacio con el siguiente elemento */
+    transition: background-color 0.2s ease, border-color 0.2s ease; /* Transición más rápida */
+}
+
+.errorLabel::before {
+    content: "⚠️"; /* Icono de advertencia más discreto */
+    font-size: 0.4rem; /* Tamaño más pequeño */
+    margin-right: 1px; /* Espacio más ajustado con el texto */
+    vertical-align: middle;
+}
+
+.errorLabel:hover {
+    background-color: rgba(229, 115, 115, 0.15); /* Fondo ligeramente más visible */
+    border-color: #d84315; /* Un toque más oscuro en el borde */
+}
+
+
+
+.successMessage {
+    color: #81c784;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}

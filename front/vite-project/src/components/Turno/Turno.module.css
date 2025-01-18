@@ -1,0 +1,90 @@
+.appointmentCard {
+  background-color: #2a2a2a; /* Fondo oscuro para armonizar con el contenedor */
+  padding: 1.5rem; /* Espaciado generoso */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 1px solid #555555; /* Borde oscuro y sutil */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  cursor: pointer;
+  color: #e0e0e0; /* Color de texto claro */
+}
+
+.appointmentCard:hover {
+  transform: translateY(-2px); /* Movimiento ligero al pasar el mouse */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Sombra más prominente al pasar el mouse */
+  border: 1px solid #c5a880; /* Borde dorado al pasar el mouse */
+}
+
+.appointmentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500; /* Peso de fuente ligero */
+  color: #c5a880; /* Color dorado para el encabezado */
+}
+
+.statusActive {
+  color: #81c784; /* Verde suave para el estado activo */
+  font-weight: 600; /* Peso de fuente fuerte */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 4px 12px; /* Espaciado interno */
+  background-color: rgba(129, 199, 132, 0.1); /* Fondo verde claro */
+}
+
+.statusInactive {
+  color: #e57373; /* Rojo suave para el estado inactivo */
+  font-weight: 600; /* Peso de fuente fuerte */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 4px 12px; /* Espaciado interno */
+  background-color: rgba(231, 76, 60, 0.1); /* Fondo rojo claro */
+}
+
+.appointmentDetails {
+  margin-top: 1rem; /* Espacio superior */
+  font-size: 0.95rem; /* Tamaño de fuente adecuado */
+  color: #b5b5b5; /* Gris suave para detalles */
+}
+
+.appointmentDetails p {
+  margin: 0.5rem 0; /* Espaciado entre párrafos */
+}
+
+.appointmentDetails strong {
+  color: #e0e0e0; /* Color claro para mayor contraste */
+}
+
+.cancelButton {
+  margin-top: 12px; /* Espacio superior */
+  padding: 6px 12px; /* Espaciado interno del botón */
+  border: none;
+  border-radius: 6px; /* Bordes redondeados */
+  background-color: #e74c3c; /* Rojo suave para cancelar */
+  color: #ffffff; /* Color del texto */
+  font-size: 0.95rem; /* Tamaño de fuente adecuado */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+.cancelButton:hover {
+  background-color: #d14533; /* Color ligeramente más oscuro al pasar el mouse */
+  transform: translateY(-1px); /* Elevación ligera */
+}
+.cancelButton.disable {
+  background-color: #e0e0e0; /* Gris deshabilitado */
+  color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .appointmentCard {
+    padding: 1rem; /* Espaciado reducido en pantallas pequeñas */
+  }
+
+  .appointmentHeader {
+    font-size: 1.1rem; /* Tamaño ajustado para pantallas pequeñas */
+  }
+}

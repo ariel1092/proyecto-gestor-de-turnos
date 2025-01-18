@@ -1,0 +1,24 @@
+npm install @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+
+
+##  .eslintrc.json
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    // Aquí puedes personalizar las reglas
+  }
+}
+c29A07j3F31mM token clav

@@ -1,0 +1,64 @@
+/* MisTurnos.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+  
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #c5a880;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+  
+.appointmentsContainer {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px; /* Limita el ancho total del contenedor */
+    margin: 0 auto; /* Centra el contenedor si es necesario */
+    z-index: 30;
+}
+  
+.appointmentCard {
+    background-color: #40444b;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px; /* Aumenta el ancho para mejor visibilidad */
+    height: auto; /* Permite ajustar la altura según el contenido */
+    display: flex;
+    flex-direction: column; /* Ordena el contenido en columna dentro de la tarjeta */
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointmentCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.noAppointmentsMessage {
+    color: #f5f5f5;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.9;
+}
