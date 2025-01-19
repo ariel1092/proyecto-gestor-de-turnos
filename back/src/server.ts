@@ -12,7 +12,7 @@ import { ErrorResponse, PostgresError } from "./interfaces/ErrorInterface"
 server.use(express.json())
 server.use(morgan("dev"))
 server.use(cors({
-    origin:'https://proyecto-gestor-de-turnos-xokk1ufn5-ariel1092s-projects.vercel.app'
+    origin:'https://vercel.com/ariel1092s-projects/fernanda_aballay'
 }))
 
 //Rutas
